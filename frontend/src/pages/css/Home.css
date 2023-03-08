@@ -1,0 +1,25 @@
+.Home {
+  width: 100%;
+  /*  display: flex;
+  align-items: flex-start;
+  justify-content: center; */
+  padding-top: 74px;
+}
+.Home .svg-div {
+  width: 100%;
+  overflow: hidden;
+}
+.Home .svg-div img {
+  width: 101%;
+  transform: rotate(180deg);
+}
+.Home .section-1 {
+  /*     width: 100%; */
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-inline: 120px;
+}
+.Home .section-1 h1 {
+  font-size: 80px;
+}/*# sourceMappingURL=Home.css.map */

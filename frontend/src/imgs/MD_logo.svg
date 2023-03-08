@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="98.312mm" height="59.037mm" version="1.1" viewBox="0 0 98.312 59.037" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<clipPath id="b">
+<rect x="-42.073" y="-108.13" width="5.9104" height="41.743" ry="0" fill="#f0f" stroke-width=".69378"/>
+</clipPath>
+<clipPath id="a">
+<rect x="-108.13" y="36.152" width="5.9104" height="41.743" ry="0" fill="#f0f" stroke-width=".69378"/>
+</clipPath>
+</defs>
+<g transform="translate(-64.074 -35.403)">
+<g transform="rotate(180 108.42 62.158)" fill="#999" stroke-width=".69377">
+<rect transform="rotate(45)" x="80.501" y="-38.242" width="5.9104" height="41.743" ry="0"/>
+<rect transform="rotate(-45)" x="-3.4804" y="80.506" width="5.9104" height="41.743" ry="0"/>
+</g>
+<g transform="translate(-9.375e-7)" fill="#666">
+<path d="m123.47 94.434-4.1793-4.1793 29.516-29.516 4.1793 4.1793z" fill="#666" stroke-width=".69377"/>
+<path d="m123.45 35.412-4.1791 4.1791 4.1816 4.1817v-8.3514l7e-3 1.77e-4zm1.003 1.003v8.3581l24.334 24.334 4.1791-4.1796z" fill="#666" stroke-width=".69377"/>
+<path transform="scale(-1)" d="m-123.45-94.44h5.9104v59.027h-5.9104z" stroke-width=".825"/>
+</g>
+<g transform="translate(8.3364 -.0082694)" fill="#666">
+<path d="m94.667 35.411 4.1793 4.1793-29.516 29.516-4.1793-4.1793z" fill="#666" stroke-width=".69377"/>
+<path d="m65.169 64.917 4.1793-4.1793 29.516 29.516-4.1793 4.1793z" fill="#666" stroke-width=".69377"/>
+<path transform="rotate(225)" d="m-108.15 10.399h5.9104v41.743h-5.9104z" clip-path="url(#a)" stroke-width=".69377"/>
+<path transform="rotate(135)" d="m-41.904-133.75h5.9104v41.743h-5.9104z" clip-path="url(#b)" stroke-width=".69377"/>
+<path transform="scale(-1)" d="m-115.08-94.16h5.9104v58.735h-5.9104z" stroke-width=".82296"/>
+</g>
+<g transform="translate(9.6275 5.5216)" fill="#999" stroke-width=".69377">
+<rect transform="rotate(45)" x="80.501" y="-38.242" width="5.9104" height="41.743" ry="0"/>
+<rect transform="rotate(-45)" x="-3.4804" y="80.506" width="5.9104" height="41.743" ry="0"/>
+</g>
+</g>
+</svg>
