@@ -18,7 +18,8 @@
   transform: rotate(180deg);
 }
 .Home .section-1 {
-  height: 90vh;
+  height: -moz-fit-content;
+  height: fit-content;
   width: 100%;
   background: linear-gradient(#5fa2b9, #006b8f);
   color: white;
@@ -27,7 +28,7 @@
 }
 .Home .section-1 h1 {
   font-size: 80px;
-  margin-top: -20px;
+  margin-top: -30px;
   margin-bottom: 20px;
   text-align: center;
   font-weight: 400;
@@ -39,42 +40,42 @@
   margin: 0;
   font-size: 36px;
   padding-bottom: 8px;
+  text-align: left;
 }
 .Home .section-1 span {
   font-weight: bold;
   margin: 0;
-  font-size: 26px;
+  font-size: 22px;
 }
 .Home .section-1 p {
   margin: 0;
-  font-size: 26px;
+  font-size: 22px;
 }
 .Home .section-1 .about {
-  height: 70%;
+  width: 100%;
+  height: auto;
   padding-inline: 120px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  box-sizing: border-box;
 }
 .Home .section-1 .about .about-container {
-  height: 70%;
+  height: auto;
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
   padding-bottom: 20px;
   border-bottom: 2px white solid;
+  text-align: justify;
 }
-.Home .section-1 .about .about-container p {
-  padding-bottom: 20px;
+.Home .section-1 .about .about-container .about-img {
+  width: 25%;
 }
-.Home .section-1 .about .about-img {
-  height: 100%;
-}
-.Home .section-1 .about .about-img img {
+.Home .section-1 .about .about-container .about-img img {
   border-radius: 20px;
-  height: 100%;
+  height: auto;
+  width: 100%;
   filter: grayscale(1) contrast(1.1);
+  float: left;
+  margin: 15px;
 }
 .Home .section-1 .about .about-shorts {
   height: auto;
@@ -83,8 +84,75 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  text-align: center;
   gap: 4px;
 }
-.Home .section-1 .about .about-shorts span, .Home .section-1 .about .about-shorts p {
-  font-size: 22px;
+@media screen and (min-width: 1440px) {
+  .Home .section-1 {
+    height: 90vh;
+  }
+  .Home .section-1 h1 {
+    margin-top: -50px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .Home .section-1 h1 {
+    margin-top: -30px;
+  }
+  .Home .section-1 .about {
+    padding-inline: 90px;
+  }
+  .Home .section-1 .about .about-container .about-img {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .Home .section-1 h1 {
+    margin: 0;
+  }
+  .Home .section-1 h2 {
+    font-size: 28px;
+  }
+  .Home .section-1 span,
+  .Home .section-1 p {
+    font-size: 18px;
+  }
+  .Home .section-1 .about {
+    padding-inline: 60px;
+  }
+  .Home .section-1 .about .about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Home .section-1 .about .about-container .about-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 0;
+    float: none;
+  }
+  .Home .section-1 .about .about-container .about-text h2 {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 420px) {
+  .Home {
+    padding-top: 40px;
+  }
+  .Home .section-1 h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+  .Home .section-1 h2 {
+    font-size: 24px;
+  }
+  .Home .section-1 span,
+  .Home .section-1 p {
+    font-size: 14px;
+  }
+  .Home .section-1 .about {
+    padding-inline: 20px;
+  }
 }/*# sourceMappingURL=Home.css.map */

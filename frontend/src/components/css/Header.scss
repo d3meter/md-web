@@ -1,4 +1,5 @@
 .Header {
+  min-width: 250px;
   width: 100%;
   height: 74px;
   background-color: white;
@@ -10,7 +11,7 @@
   padding-block: 10px;
   box-sizing: border-box;
   z-index: 2;
-  filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.400));
+  filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.4));
   .section-left {
     height: 100%;
     img {
@@ -58,15 +59,45 @@
       align-items: center;
       justify-content: center;
       p {
-       filter: opacity(40%);
+        filter: opacity(40%);
       }
     }
     .menu {
-     height: auto;
-     width: auto;
-     display: flex;
-     align-items: center;
-     cursor: pointer;
+      height: auto;
+      width: auto;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .section-mid {
+      h1 {
+        font-size: 22px;
+      }
+      h2 {
+        font-size: 16px;
+      }
+    }
+    .section-right {
+      .switch-lang {
+        display: none;
+      }
+    }
+  }
+  @media screen and (max-width: 420px) {
+    height: 40px;
+    justify-content: flex-end;
+    .section-left {
+      display: none;
+    }
+    .section-mid {
+      h1 {
+        font-size: 14px;
+      }
+      h2 {
+        font-size: 8px;
+      }
     }
   }
 }
