@@ -1,25 +1,90 @@
 .Home {
   width: 100%;
-  /*  display: flex;
+  height: auto;
+  display: flex;
+  flex-direction: column;
   align-items: flex-start;
-  justify-content: center; */
+  justify-content: center;
   padding-top: 74px;
 }
 .Home .svg-div {
   width: 100%;
+  height: auto;
   overflow: hidden;
 }
 .Home .svg-div img {
-  width: 101%;
+  margin-left: -5px;
+  width: 102%;
   transform: rotate(180deg);
 }
 .Home .section-1 {
-  /*     width: 100%; */
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  padding-inline: 120px;
+  height: 90vh;
+  width: 100%;
+  background: linear-gradient(#5fa2b9, #006b8f);
+  color: white;
+  margin-bottom: -2px;
+  box-sizing: border-box;
 }
 .Home .section-1 h1 {
   font-size: 80px;
+  margin-top: -20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 400;
+}
+.Home .section-1 h1 span {
+  font-size: inherit;
+}
+.Home .section-1 h2 {
+  margin: 0;
+  font-size: 36px;
+  padding-bottom: 8px;
+}
+.Home .section-1 span {
+  font-weight: bold;
+  margin: 0;
+  font-size: 26px;
+}
+.Home .section-1 p {
+  margin: 0;
+  font-size: 26px;
+}
+.Home .section-1 .about {
+  height: 70%;
+  padding-inline: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.Home .section-1 .about .about-container {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px white solid;
+}
+.Home .section-1 .about .about-container p {
+  padding-bottom: 20px;
+}
+.Home .section-1 .about .about-img {
+  height: 100%;
+}
+.Home .section-1 .about .about-img img {
+  border-radius: 20px;
+  height: 100%;
+  filter: grayscale(1) contrast(1.1);
+}
+.Home .section-1 .about .about-shorts {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+.Home .section-1 .about .about-shorts span, .Home .section-1 .about .about-shorts p {
+  font-size: 22px;
 }/*# sourceMappingURL=Home.css.map */
