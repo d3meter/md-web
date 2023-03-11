@@ -20,6 +20,8 @@ import logoReact from "./../imgs/logos/react.png";
 import logoRestApi from "./../imgs/logos/rest-api.webp";
 import logoSass from "./../imgs/logos/sass.png";
 import logoVs from "./../imgs/logos/vs.png";
+import ArrowForwardIosRoundedIcon from "@mui/icons-material/ArrowForwardIosRounded";
+import ArrowBackIosRoundedIcon from "@mui/icons-material/ArrowBackIosRounded";
 
 function Home() {
   return (
@@ -88,7 +90,9 @@ function Home() {
         <img src={headerSvg1} alt="page-header" />
       </div>
       <div className="section-2">
-        <h1>Tech <span>Stacks</span></h1>
+        <h1>
+          Tech <span>Stacks</span>
+        </h1>
         <div className="logo-container">
           <img src={logoHtml} alt="html5" />
           <img src={logoCss} alt="css3" />
@@ -107,6 +111,50 @@ function Home() {
           <img src={logoFigma} alt="figma" />
           <img src={logoPhotoshop} alt="photoshop" />
           <img src={logoInkscape} alt="inkscape" />
+        </div>
+      </div>
+      <div className="section-3">
+        <div className="section-container">
+          <div className="title">
+            <h1>
+              <span>Project</span> Overview
+            </h1>
+          </div>
+          <div className="card-nav">
+            <div className="navigator nav-back">
+              <ArrowBackIosRoundedIcon />
+            </div>
+            <div className="project-cards">
+              <div className="project-card">
+                <h2>Project</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptatem molestias ut nobis numquam possimus fugit soluta,
+                  dolores sit, commodi natus facilis dolorem. Illum aliquam
+                  delectus, rerum nesciunt minima sit quaerat? Corporis
+                  explicabo libero voluptatum similique accusantium ab, sunt
+                  possimus, perferendis ipsum safafafgagdgagewgteag
+                </p>
+                <h3>READ MORE...</h3>
+              </div>
+              <div className="project-card">
+                <h2>Project</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptatem molestias ut nobis numquam possimus fugit soluta,
+                  dolores sit, commodi natus facilis dolorem. Illum aliquam
+                  delectus, rerum nesciunt minima sit quaerat? Corporis
+                  explicabo libero voluptatum similique accusantium ab, sunt
+                  possimus, perferendis ipsum error iste soluta, ad atque facere
+                  nostrum nesciunt animi ullam earum repudiandae saepe ex
+                  tempore minima nisi? Nulla, aliquam?
+                </p>
+              </div>
+            </div>
+            <div className="navigator nav-forward">
+              <ArrowForwardIosRoundedIcon />
+            </div>
+          </div>
         </div>
       </div>
     </div>
