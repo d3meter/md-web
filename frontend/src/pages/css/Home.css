@@ -62,12 +62,14 @@
 .Home .section-1 .about .about-container {
   height: auto;
   width: 100%;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   border-bottom: 2px white solid;
   text-align: justify;
 }
 .Home .section-1 .about .about-container .about-img {
   width: 25%;
+  height: auto;
+  box-sizing: border-box;
 }
 .Home .section-1 .about .about-container .about-img img {
   border-radius: 20px;
@@ -76,6 +78,11 @@
   filter: grayscale(1) contrast(1.1);
   float: left;
   margin: 15px;
+  transition: 1s;
+}
+.Home .section-1 .about .about-container .about-img img:hover {
+  filter: unset;
+  transition: 0.3s ease-in-out;
 }
 .Home .section-1 .about .about-shorts {
   height: auto;
@@ -86,11 +93,46 @@
   justify-content: center;
   text-align: center;
   gap: 4px;
+  line-height: 1.4;
+}
+.Home .section-2 {
+  width: 100%;
+  height: auto;
+  padding-bottom: 50px;
+  padding-inline: 120px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+.Home .section-2 h1,
+.Home .section-2 span {
+  font-size: 80px;
+  font-weight: 400;
+}
+.Home .section-2 span {
+  font-weight: bold;
+  color: #00963b;
+}
+.Home .section-2 .logo-container {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  filter: grayscale(1) opacity(0.4);
+  transition: 1s;
+}
+.Home .section-2 .logo-container img {
+  height: 80px;
+}
+.Home .section-2 .logo-container:hover {
+  filter: grayscale(0) opacity(0.7);
+  transition: 0.3s ease-in-out;
 }
 @media screen and (min-width: 1440px) {
-  .Home .section-1 {
-    height: 90vh;
-  }
   .Home .section-1 h1 {
     margin-top: -50px;
   }
@@ -105,8 +147,14 @@
   .Home .section-1 .about .about-container .about-img {
     width: 45%;
   }
+  .Home .section-2 .logo-container {
+    width: 75%;
+  }
+  .Home .section-2 .logo-container img {
+    height: 60px;
+  }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) and (max-width: 800px) {
   .Home .section-1 h1 {
     margin: 0;
   }
@@ -136,6 +184,13 @@
   .Home .section-1 .about .about-container .about-text h2 {
     text-align: center;
   }
+  .Home .section-2 {
+    flex-direction: column;
+    padding-inline: 60px;
+  }
+  .Home .section-2 .logo-container {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 420px) {
   .Home {
@@ -154,5 +209,15 @@
   }
   .Home .section-1 .about {
     padding-inline: 20px;
+  }
+  .Home .section-2 {
+    padding-inline: 20px;
+  }
+  .Home .section-2 h1,
+  .Home .section-2 span {
+    font-size: 50px;
+  }
+  .Home .section-2 .logo-container img {
+    height: 40px;
   }
 }/*# sourceMappingURL=Home.css.map */
