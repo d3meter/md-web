@@ -22,6 +22,8 @@ import logoSass from "./../imgs/logos/sass.png";
 import logoVs from "./../imgs/logos/vs.png";
 import ArrowForwardIosRoundedIcon from "@mui/icons-material/ArrowForwardIosRounded";
 import ArrowBackIosRoundedIcon from "@mui/icons-material/ArrowBackIosRounded";
+import softSkills from "./../imgs/soft_skills.png";
+
 
 function Home() {
   return (
@@ -156,6 +158,14 @@ function Home() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="section-4">
+        <div className="logo-container">
+          <img src={softSkills} alt="soft skills" />
+        </div>
+        <h1>
+          Soft <span>Skills</span>
+        </h1>
       </div>
     </div>
   );
