@@ -1,0 +1,147 @@
+.Footer {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  box-sizing: border-box;
+  overflow: hidden;
+  .svg-div {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  h1 {
+    font-size: 80px;
+    font-weight: bold;
+    margin-top: 0;
+    padding-bottom: 20px;
+  }
+  h2 {
+    height: auto;
+    font-weight: bold;
+    font-size: 24px;
+  }
+  span {
+    color: #00dd55;
+  }
+  p {
+    font-size: 22px;
+    text-align: justify;
+    line-break: 10px;
+    margin: 0;
+  }
+  .contact-container {
+    width: 100%;
+    height: auto;
+    padding-inline: 120px;
+    background-color: #022850;
+    color: white;
+    box-sizing: border-box;
+    padding-bottom: 60px;
+    .contact-content {
+      width: 100%;
+      height: fit-content;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 100px;
+      .contact-text {
+        width: 50%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        h2 {
+          padding-top: 15px;
+          text-align: right;
+        }
+      }
+      .contact-links {
+        width: 50%;
+        padding-left: 30px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        border-left: solid white 2px;
+        .contact-row {
+          width: fit-content;
+        }
+        .logo-container {
+          padding-top: 10px;
+          padding-left: 30px;
+          width: 100%;
+          height: auto;
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          filter: invert(1);
+          img {
+            height: 40px;
+            width: auto;
+            filter: grayscale(100%);
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 1440px) {
+  }
+  @media screen and (max-width: 1200px) {
+    .contact-container {
+      padding-inline: 90px;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    h2 {
+      font-size: 20px;
+    }
+    span,
+    p {
+      font-size: 18px;
+    }
+    .contact-container {
+      padding-inline: 60px;
+      .contact-content {
+        flex-direction: column;
+        gap: 20px;
+        .contact-text {
+          width: 100%;
+        }
+        .contact-links {
+          width: 100%;
+          border-left: 0;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          padding-left: 0;
+          padding-top: 20px;
+          border-top: solid 2px white;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 420px) {
+    padding-inline: 20px;
+    padding-bottom: 20px;
+    h1 {
+      font-size: 50px;
+    }
+    h2 {
+      font-size: 16px;
+    }
+    span,
+    p {
+      font-size: 14px;
+    }
+    .contact-container {
+      .contact-content {
+        gap: 20px;
+      }
+    }
+  }
+}
