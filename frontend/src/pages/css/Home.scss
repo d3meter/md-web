@@ -331,7 +331,9 @@ span {
         flex-direction: column;
         padding-inline: 60px;
         .logo-container {
+          padding-top: 20px;
           width: 100%;
+          height: fit-content;
         }
       }
       .section-4 {

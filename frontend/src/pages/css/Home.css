@@ -332,7 +332,10 @@ span {
     padding-inline: 60px;
   }
   .Home .section-2 .logo-container, .Home .section-4 .logo-container {
+    padding-top: 20px;
     width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .Home .section-4 {
     flex-direction: column-reverse;
