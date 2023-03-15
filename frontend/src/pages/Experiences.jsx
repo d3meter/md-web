@@ -1,14 +1,14 @@
 import React from 'react';
-import "./css/Contact.css"
+import "./css/Experiences.css"
 import "../components/UnderConstruction";
 import UnderConstruction from "../components/UnderConstruction";
 
-function Contact() {
+function Timelines() {
   return (
-    <div className='Contact'>
-      <UnderConstruction />
-    </div>
+    <div className="Experiences">
+    <UnderConstruction />
+  </div>
   )
 }
 
-export default Contact
+export default Timelines

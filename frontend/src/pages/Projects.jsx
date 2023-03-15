@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import "./css/Projects.css"
+import "../components/UnderConstruction";
+import UnderConstruction from "../components/UnderConstruction";
 
 function Projects() {
   return (
-    <div className='Projects'>Projects</div>
-  )
+    <div className="Projects">
+      <UnderConstruction />
+    </div>
+  );
 }
 
-export default Projects
+export default Projects;

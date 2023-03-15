@@ -33,7 +33,13 @@ function Footer() {
                 <Link to="/contact">
                   <img src={emailLogo} alt="email" />
                 </Link>
-                <img src={discordLogo} alt="discord" />
+                <a
+                  href="https://discordapp.com/users/1013479565122875515"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img src={discordLogo} alt="discord" />
+                </a>
               </div>
             </div>
             <div className="contact-row">
