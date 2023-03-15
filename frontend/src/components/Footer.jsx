@@ -1,5 +1,6 @@
 import React from "react";
 import "./css/Footer.css";
+import { Link } from "react-router-dom";
 import footerSvg from "../imgs/md_footer.svg";
 import emailLogo from "../imgs/email.png";
 import githubLogo from "../imgs/github.png";
@@ -29,7 +30,9 @@ function Footer() {
                 <span>@</span> Contact me
               </h2>
               <div className="logo-container">
-                <img src={emailLogo} alt="email" />
+                <Link to="/contact">
+                  <img src={emailLogo} alt="email" />
+                </Link>
                 <img src={discordLogo} alt="discord" />
               </div>
             </div>
@@ -38,8 +41,20 @@ function Footer() {
                 <span>#</span> Visit me on
               </h2>
               <div className="logo-container">
-                <img src={githubLogo} alt="github" />
-                <img src={linkedinLogo} alt="linkedin" />
+                <a
+                  href="https://github.com/d3meter?tab=repositories"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img src={githubLogo} alt="github" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/mark-demeter-53bb88b3/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img src={linkedinLogo} alt="linkedin" />
+                </a>
               </div>
             </div>
           </div>
