@@ -24,7 +24,6 @@ import ArrowForwardIosRoundedIcon from "@mui/icons-material/ArrowForwardIosRound
 import ArrowBackIosRoundedIcon from "@mui/icons-material/ArrowBackIosRounded";
 import softSkills from "../imgs/soft_skills.png";
 
-
 function Home() {
   return (
     <div className="Home">
@@ -43,6 +42,12 @@ function Home() {
             <p className="about-text">
               <h2>Welcome to my website!</h2>
               <p>
+                These pages are completely responsive and designed by myself.
+                All the vector graphics as footer, header and my logo were drawn
+                in Inkscape.
+              </p>
+              <br />
+              <p>
                 The purpose of this website is to introduce myself focused on my
                 tech skills and expertises. I am a
                 <span>
@@ -50,10 +55,10 @@ function Home() {
                   former mechanical engineer with designer, project manager
                   experiences and improved soft skills
                 </span>
-                . I’ve lived, learned and{" "}
-                <span>worked in Austria for 7 years</span>. Presently I am
-                looking for the opportunity to enter the IT sector as a{" "}
-                <span>Software or Web Developer</span>.
+                . I’ve lived, learned and
+                <span> worked in Austria for 7 years</span>. Presently I am
+                looking for the opportunity to enter the IT sector as a
+                <span> Software or Web Developer</span>.
               </p>
               <br />
               <span>
