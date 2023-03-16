@@ -33,6 +33,13 @@
 .Contact .text-fields button:hover {
   background-color: rgba(2, 40, 80, 0.8666666667);
 }
+.Contact .text-fields button:disabled,
+.Contact .text-fields button[disabled] {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+  cursor: default;
+}
 @media screen and (max-width: 420px) {
   .Contact {
     padding-top: 10px;

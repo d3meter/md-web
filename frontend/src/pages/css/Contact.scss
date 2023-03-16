@@ -19,16 +19,23 @@
     gap: 20px;
     box-sizing: border-box;
     button {
-     width: 40%;
-     height: 40px;
-     font-size: x-large;
-     cursor: pointer;
-     background-color: #022850;
-     color: white;
-     border-radius: 10px;
+      width: 40%;
+      height: 40px;
+      font-size: x-large;
+      cursor: pointer;
+      background-color: #022850;
+      color: white;
+      border-radius: 10px;
     }
     button:hover {
-     background-color: #022850dd;
+      background-color: #022850dd;
+    }
+    button:disabled,
+    button[disabled] {
+      border: 1px solid #999999;
+      background-color: #cccccc;
+      color: #666666;
+      cursor: default;
     }
   }
   @media screen and (max-width: 420px) {
