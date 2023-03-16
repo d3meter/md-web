@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import "./css/Contact.css";
 import {
   TextField,
@@ -7,6 +7,7 @@ import {
   MenuItem,
   FormControl,
 } from "@mui/material";
+import emailjs from '@emailjs/browser';
 
 function Contact() {
   const [name, setName] = useState("");
@@ -32,38 +33,34 @@ function Contact() {
     setText(event.target.value);
   };
 
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-    setStatus("Sending...");
-    let details = {
-      name: name,
-      email: email,
-      text: text,
-      subject: subject
-    };
+  const form = useRef();
 
-    console.log(details);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setStatus("Sending...")
 
-    let response = await fetch("http://localhost:3000/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
-      },
-      body: JSON.stringify(details),
-    });
-    setStatus("Send");
-    let result = await response.json();
-    alert(result.status);
+    emailjs.sendForm('service_u86b3f4', 'template_7620jp2', form.current, 'z0T9_CPBpXgxqsiRc')
+      .then((result) => {
+          console.log(result.text);
+          setStatus("Email sent!");
+          setEmail("");
+          setName("");
+          setSubject("");
+          setText("");
+      }, (error) => {
+          console.log(error.text);
+      });
   };
 
   return (
     <div className="Contact">
       <h1>Contact</h1>
-      <form onSubmit={handleSubmit} className="text-fields">
+      <form ref={form} onSubmit={handleSubmit} className="text-fields">
         <TextField
           fullWidth
           required
           id="name"
+          name="name"
           label="Name"
           value={name}
           onChange={handleChangeName}
@@ -72,15 +69,17 @@ function Contact() {
           fullWidth
           required
           id="email"
+          name="email"
           label="E-mail"
           value={email}
           onChange={handleChangeEmail}
         />
         <FormControl required fullWidth>
-          <InputLabel id="subject">Subject</InputLabel>
+          <InputLabel id="subject-input">Subject</InputLabel>
           <Select
-            labelId="subject-select-label"
-            id="subject-select"
+            labelId="subject-label"
+            id="subject"
+            name="subject"
             value={subject}
             label="Subject"
             onChange={handleChangeSubject}
@@ -94,6 +93,7 @@ function Contact() {
         <TextField
           fullWidth
           id="text"
+          name="text"
           label="Text"
           required
           multiline
