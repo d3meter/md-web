@@ -1,4 +1,5 @@
 import React, { useState, useRef } from "react";
+import { useNavigate } from "react-router-dom";
 import "./css/Contact.css";
 import {
   TextField,
@@ -7,7 +8,7 @@ import {
   MenuItem,
   FormControl,
 } from "@mui/material";
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
 
 function Contact() {
   const [name, setName] = useState("");
@@ -35,21 +36,41 @@ function Contact() {
 
   const form = useRef();
 
+  /* useEffect(() => {
+  if (setStatus("Email sent!")) {
+    setTimeout(() => redirect("/"), 3000)
+  }
+}, []) */
+
+  const navigate = useNavigate();
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    setStatus("Sending...")
+    setStatus("Sending...");
 
-    emailjs.sendForm('service_u86b3f4', 'template_7620jp2', form.current, 'z0T9_CPBpXgxqsiRc')
-      .then((result) => {
+    emailjs
+      .sendForm(
+        "service_u86b3f4",
+        "template_7620jp2",
+        form.current,
+        "z0T9_CPBpXgxqsiRc"
+      )
+      .then(
+        (result) => {
           console.log(result.text);
           setStatus("Email sent!");
           setEmail("");
           setName("");
           setSubject("");
           setText("");
-      }, (error) => {
+          setTimeout(() => {
+            navigate("/");
+          }, 3000);
+        },
+        (error) => {
           console.log(error.text);
-      });
+        }
+      );
   };
 
   return (

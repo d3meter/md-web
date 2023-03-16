@@ -24,7 +24,7 @@ https://www.figma.com/file/rUhl9Sro4zLNE5cvVPFz5M/MD-web?node-id=0%3A1&t=tRHwXC2
 	 - [ ] Experiences (work, education)
 	 - [ ] Projects
 	 - [x] Contact
- - [ ] Components
+ - [x] Components
 	 - [x] Footer
 	 - [x] Under construction
  - [ ] Firebase hosting
