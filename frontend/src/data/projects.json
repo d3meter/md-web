@@ -1,0 +1,42 @@
+[
+  {
+    "name": "NASA Calendar",
+    "text": "I used NASA-API to build my database. The landing page (main page) shows the last picture or video of the day from NASA. With clicking on the calendar icon of header it navigates the user to the calendar page. As default configuration the current month occures but the user can switch between the required years and months. As the data is fetched directly from the database the loading time is significantly reduced. When clicking on a day its detail page appears. There is more information about the current media and when clicking on it the HD content is opened in a new tab. At the moment Firebase is used for authentication complemented with some validation features such as password and email format check. In the future hosting and fire store will be integrated as well.",
+    "status": "in progress",
+    "type": "solo project",
+    "stacks": ["html", "js", "react", "react-router", "sass", "mui", "firebase"],
+    "gitUrl": "https://github.com/d3meter/nasa-calendar"
+  },
+  {
+    "name": "Pizza admin (JS)",
+    "text": "Three-persons-project. Pizza ordering website with admin and order listing site incl. own backend. The orders are stored in separated JSON files (backend/data/orders) identified with auto-generated ids. I planned the UI/UX design in Figma and in addition, my main tasks were the inputs fields, the order.js and a lot of other functions on every other pages. On /admin you can add new and delete or modify existing pizzas. Active: false means the pizza is inactive so it will disappear on the public index.html. /order site made for kitchen with minimal design. It gives an overview of the current orders. You can change the status of orders and filter what is still open.",
+    "status": "complete",
+    "type": "bootcamp team project",
+    "stacks": ["html", "js", "sass", "figma", "express"],
+    "gitUrl": "https://github.com/d3meter/TEAMPROJ-JS-pizza-order-admin"
+  },
+  {
+    "name": "Artwork",
+    "text": "Our final duo-project. The complete UI/UX design was my part, but we mainly coded together via Google Meet. The user can browse between the fetched artworks of Harvard Museum API with using different filter functions like searching for name or filtering artwork type, etc. Each artwork has its own page of details. The favorite artworks can be saved and stored in local store.",
+    "status": "complete",
+    "type": "bootcamp team project",
+    "stacks": [
+      "html",
+      "react",
+      "css",
+      "mui",
+      "masonry",
+      "react-router",
+      "local-store"
+    ],
+    "gitUrl": "https://github.com/d3meter/TEAMPROJ-REACT-artwork"
+  },
+  {
+    "name": "Pizza order",
+    "text": "The same website as Pizza order (JS) but implemented into REACT this time, without admin or order pages. This was also a three-persons-project.",
+    "status": "complete",
+    "type": "bootcamp team project",
+    "stacks": ["html", "react", "css", "express"],
+    "gitUrl": "https://github.com/d3meter/TEAMPROJ-REACT-pizza-order"
+  }
+]
