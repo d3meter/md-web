@@ -127,7 +127,7 @@ span {
       }
     }
     .logo-container:hover {
-      filter: grayscale(0);
+      filter: grayscale(0) opacity(0.8);
       transition: 0.3s ease-in-out;
     }
   }

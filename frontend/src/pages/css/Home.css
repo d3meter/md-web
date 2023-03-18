@@ -132,7 +132,7 @@ span {
   height: 80px;
 }
 .Home .section-2 .logo-container:hover {
-  filter: grayscale(0);
+  filter: grayscale(0) opacity(0.8);
   transition: 0.3s ease-in-out;
 }
 .Home .section-3 {
