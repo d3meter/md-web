@@ -164,6 +164,9 @@
     padding-top: 50px;
     font-size: 20px;
   }
+  .dropdown-menu .menu-list {
+    padding-top: 0;
+  }
   .dropdown-menu .menu-list .menu-item {
     margin-block: 10px;
   }

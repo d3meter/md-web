@@ -125,14 +125,14 @@ span {
   align-items: center;
   justify-content: center;
   gap: 20px;
-  filter: grayscale(1) opacity(0.4);
+  filter: grayscale(1) opacity(0.7);
   transition: 1s;
 }
 .Home .section-2 .logo-container img {
   height: 80px;
 }
 .Home .section-2 .logo-container:hover {
-  filter: grayscale(0) opacity(0.7);
+  filter: grayscale(0);
   transition: 0.3s ease-in-out;
 }
 .Home .section-3 {
@@ -289,7 +289,9 @@ span {
   .Home .section-2 {
     padding-inline: 20px;
     padding-top: 20px;
-    padding-bottom: 20px;
+  }
+  .Home .section-2 .logo-container {
+    filter: grayscale(1) opacity(0.7);
   }
   .Home .section-2 .logo-container img {
     height: 40px;
@@ -300,6 +302,5 @@ span {
   }
   .Home .section-4 {
     padding-inline: 20px;
-    padding-bottom: 20px;
   }
 }/*# sourceMappingURL=Home.css.map */

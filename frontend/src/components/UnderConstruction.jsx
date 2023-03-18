@@ -8,7 +8,7 @@ function UnderConstruction() {
     <div className="UnderConstruction">
       <h1>
         <span>Sorry...</span>
-        please look back later!
+        please come back later!
       </h1>
       <img src={constructionImg} alt="under construction" />
       <Link to="/">
