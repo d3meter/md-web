@@ -52,10 +52,10 @@ function Home() {
                 <span>
                   {" "}
                   former mechanical engineer with designer, project manager
-                  experiences and improved soft skills
+                  experience and improved soft skills
                 </span>
                 . I’ve lived, learned and
-                <span> worked in Austria for 7 years</span>. Presently I am
+                <span> worked in Austria for 7 years</span>. Currently I am
                 looking for the opportunity to enter the IT sector as a
                 <span> Software or Web Developer</span>.
               </p>

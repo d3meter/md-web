@@ -1,5 +1,6 @@
 ## MD-web
 My own introduction website.
+[Click here to open](markdemeter-dev.web.app)
 
 **Start**
 
@@ -19,7 +20,7 @@ https://www.figma.com/file/rUhl9Sro4zLNE5cvVPFz5M/MD-web?node-id=0%3A1&t=tRHwXC2
 	 - [ ] Home
 		 - [x] About me
 		 - [x] Tech tasks
-		 - [ ] Project overview
+		 - [x] Project overview
 		 - [x] Soft skills
 	 - [ ] Experiences (work, education)
 	 - [ ] Projects
@@ -27,10 +28,11 @@ https://www.figma.com/file/rUhl9Sro4zLNE5cvVPFz5M/MD-web?node-id=0%3A1&t=tRHwXC2
  - [x] Components
 	 - [x] Footer
 	 - [x] Under construction
- - [ ] Firebase hosting
+ - [x] Firebase hosting
  - [x] Desing with SCSS and Material UI
  - [x] Self-made graphic design (SVG)
 	 - [x] header, footer
 	 - [x] logo
  - [ ] Spinner while loading data
 	- [ ] Page animations
+	- [ ] Change web icons
