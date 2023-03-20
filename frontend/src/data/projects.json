@@ -6,7 +6,8 @@
     "type": "solo project",
     "stacks": ["html", "js", "react", "react-router", "sass", "mui", "firebase"],
     "gitUrl": "https://github.com/d3meter/nasa-calendar",
-    "webUrl": "https://nasa-calendar.web.app/"
+    "webUrl": "https://nasa-calendar.web.app/",
+    "previewId": "nasa-calendar"
   },
   {
     "name": "Pizza admin (JS)",
@@ -14,7 +15,8 @@
     "status": "complete",
     "type": "bootcamp team project",
     "stacks": ["html", "js", "sass", "figma", "express"],
-    "gitUrl": "https://github.com/d3meter/TEAMPROJ-JS-pizza-order-admin"
+    "gitUrl": "https://github.com/d3meter/TEAMPROJ-JS-pizza-order-admin",
+    "previewId": "pizza-admin"
   },
   {
     "name": "Artwork",
@@ -31,7 +33,8 @@
       "local-store"
     ],
     "gitUrl": "https://github.com/d3meter/TEAMPROJ-REACT-artwork",
-    "webUrl": "https://react-artwork.web.app/"
+    "webUrl": "https://react-artwork.web.app/",
+    "previewId": "artwork"
   },
   {
     "name": "Pizza order",
@@ -40,6 +43,47 @@
     "type": "bootcamp team project",
     "stacks": ["html", "react", "css", "express"],
     "gitUrl": "https://github.com/d3meter/TEAMPROJ-REACT-pizza-order",
-    "webUrl": "https://pizza-order-react.web.app/"
+    "webUrl": "https://pizza-order-react.web.app/",
+    "previewId": "pizza-order"
+  },
+  {
+    "name": "Funny calendar",
+    "text": "Practicing DOM and class manipulation with JS and styling with SCSS.",
+    "status": "complete",
+    "type": "simple practice",
+    "stacks": ["html", "js", "sass"],
+    "gitUrl": "https://github.com/d3meter/JS-practice-funny-calendar",
+    "webUrl": "https://d3meter.github.io/JS-practice-funny-calendar/frontend/index.html",
+    "previewId": "funny-calendar"
+  },
+  {
+    "name": "UI practice",
+    "text": "First experiences with grid layouts, positioning etc. he design is a duplicate of an existing website design from Behance.",
+    "status": "complete",
+    "type": "simple practice",
+    "stacks": ["html", "css"],
+    "gitUrl": "https://github.com/d3meter/UI-practice-build-a-Behance",
+    "webUrl": "https://d3meter.github.io/UI-practice-build-a-Behance/frontend/index.html",
+    "previewId": "ui-practice"
+  },
+  {
+    "name": "UI resp. design 1",
+    "text": "Practicing responsive styling with CSS and SCSS. They are simple HTML tasks, but the data content is imported by JS.",
+    "status": "complete",
+    "type": "simple practice",
+    "stacks": ["html", "js", "css", "docker"],
+    "gitUrl": "https://github.com/d3meter/UI-resp-practice1",
+    "webUrl": "https://d3meter.github.io/UI-resp-practice1/",
+    "previewId": "ui-resp1"
+  },
+  {
+    "name": "UI resp. design 2",
+    "text": "Practicing responsive styling with CSS and SCSS. They are simple HTML tasks, but the data content is imported by JS.",
+    "status": "complete",
+    "type": "simple practice",
+    "stacks": ["html", "js", "sass", "docker"],
+    "gitUrl": "https://github.com/d3meter/UI-resp-practice2",
+    "webUrl": "https://d3meter.github.io/UI-resp-practice2/",
+    "previewId": "ui-resp2"
   }
 ]

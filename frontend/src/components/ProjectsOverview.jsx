@@ -2,6 +2,7 @@ import React from "react";
 import "./css/ProjectsOverview.css";
 import projectsData from "../data/projects.json";
 import Project from "./Project";
+import { Link } from "react-router-dom";
 
 function ProjectsOverview() {
   return (
@@ -12,14 +13,14 @@ function ProjectsOverview() {
         </h1>
       </div>
       <div className="project-cards">
-        {projectsData.map((project, i) => (
+        {projectsData.filter((elem, index) => index < 4).map((project, i) => (
           <Project key={i} project={project} />
         ))}
       </div>
       <div className="link">
-        <a href="https://github.com/d3meter?tab=repositories" target="_blank" rel="noreferrer">
+        <Link to="/projects">
           <button>Click here to see even more</button>
-        </a>
+        </Link>
       </div>
     </div>
   );

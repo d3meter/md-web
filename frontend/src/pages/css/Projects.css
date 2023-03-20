@@ -1,9 +1,37 @@
 .Projects {
   width: 100%;
-  height: auto;
+  height: -moz-fit-content;
+  height: fit-content;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
+  text-align: center;
   padding-top: 74px;
+  padding-inline: 120px;
+  box-sizing: border-box;
+}
+.Projects h1 {
+  padding-block: 40px;
+}
+.Projects .project-cards {
+  padding-bottom: 80px;
+}
+@media screen and (max-width: 1200px) {
+  .Projects {
+    padding-inline: 90px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .Projects {
+    padding-inline: 20px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .Projects {
+    padding-top: 40px;
+  }
+  .Projects h1 {
+    font-size: 50px;
+  }
 }/*# sourceMappingURL=Projects.css.map */
