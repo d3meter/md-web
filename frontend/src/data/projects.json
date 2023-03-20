@@ -5,7 +5,8 @@
     "status": "in progress",
     "type": "solo project",
     "stacks": ["html", "js", "react", "react-router", "sass", "mui", "firebase"],
-    "gitUrl": "https://github.com/d3meter/nasa-calendar"
+    "gitUrl": "https://github.com/d3meter/nasa-calendar",
+    "webUrl": "https://nasa-calendar.web.app/"
   },
   {
     "name": "Pizza admin (JS)",
@@ -29,14 +30,16 @@
       "react-router",
       "local-store"
     ],
-    "gitUrl": "https://github.com/d3meter/TEAMPROJ-REACT-artwork"
+    "gitUrl": "https://github.com/d3meter/TEAMPROJ-REACT-artwork",
+    "webUrl": "https://react-artwork.web.app/"
   },
   {
     "name": "Pizza order",
-    "text": "The same website as Pizza order (JS) but implemented into REACT this time, without admin or order pages. This was also a three-persons-project.",
+    "text": "The same website as Pizza admin (JS) but implemented into REACT this time, without admin or order pages. This was also a three-persons-project.",
     "status": "complete",
     "type": "bootcamp team project",
     "stacks": ["html", "react", "css", "express"],
-    "gitUrl": "https://github.com/d3meter/TEAMPROJ-REACT-pizza-order"
+    "gitUrl": "https://github.com/d3meter/TEAMPROJ-REACT-pizza-order",
+    "webUrl": "https://pizza-order-react.web.app/"
   }
 ]

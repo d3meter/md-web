@@ -4,7 +4,7 @@ import Layout from "./components/Layout";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
-import Experiences from "./pages/Experiences";
+import Experience from "./pages/Experience";
 import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
-          <Route path="/experiences" element={<Experiences />} />
+          <Route path="/experience" element={<Experience />} />
         </Route>
       </Routes>
       <ScrollToTop />

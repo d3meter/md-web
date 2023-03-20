@@ -22,7 +22,7 @@ https://www.figma.com/file/rUhl9Sro4zLNE5cvVPFz5M/MD-web?node-id=0%3A1&t=tRHwXC2
 		 - [x] Tech tasks
 		 - [x] Project overview
 		 - [x] Soft skills
-	 - [ ] Experiences (work, education)
+	 - [ ] Experience (work, education)
 	 - [ ] Projects
 	 - [x] Contact
  - [x] Components

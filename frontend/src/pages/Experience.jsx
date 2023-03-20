@@ -1,14 +1,14 @@
 import React from 'react';
-import "./css/Experiences.css"
+import "./css/Experience.css"
 import "../components/UnderConstruction";
 import UnderConstruction from "../components/UnderConstruction";
 
-function Timelines() {
+function Experience() {
   return (
-    <div className="Experiences">
+    <div className="Experience">
     <UnderConstruction />
   </div>
   )
 }
 
-export default Timelines
+export default Experience

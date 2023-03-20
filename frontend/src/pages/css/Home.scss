@@ -12,6 +12,10 @@ span {
   font-weight: bold;
 }
 
+br {
+  line-height: 28px;
+}
+
 .Home {
   width: 100%;
   height: auto;
@@ -60,6 +64,7 @@ span {
       display: flex;
       flex-direction: column;
       box-sizing: border-box;
+
       .about-container {
         height: auto;
         width: 100%;
@@ -257,7 +262,8 @@ span {
           }
         }
       }
-      .section-2, .section-4 {
+      .section-2,
+      .section-4 {
         height: auto;
         flex-direction: column;
         padding-inline: 60px;

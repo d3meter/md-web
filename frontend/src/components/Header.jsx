@@ -64,10 +64,10 @@ function Header() {
           </Link>
           <Link
             className="menu-item"
-            to={"/experiences"}
+            to={"/experience"}
             onClick={() => setShowDropdown((oldValue) => !oldValue)}
           >
-            Experiences
+            Experience
           </Link>
           <Link
             className="menu-item"

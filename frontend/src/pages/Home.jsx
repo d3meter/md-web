@@ -40,30 +40,27 @@ function Home() {
             </div>
             <p className="about-text">
               <h2>Welcome to my website!</h2>
-              <p>
-                These pages are completely responsive and designed by myself.
-                All the vector graphics as footer, header and my logo were drawn
-                in Inkscape.
-              </p>
+              The purpose of this website is to introduce myself focused on my
+              tech skills and expertises. I am a{" "}
+              <span>
+                former mechanical engineer with designer, project manager
+                experience and improved soft skills
+              </span>
+              . I’ve lived, learned and
+              <span> worked in Austria for 7 years</span>. Currently I am
+              looking for the opportunity to enter the IT sector as a
+              <span> Software or Web Developer</span>.
               <br />
-              <p>
-                The purpose of this website is to introduce myself focused on my
-                tech skills and expertises. I am a
-                <span>
-                  {" "}
-                  former mechanical engineer with designer, project manager
-                  experience and improved soft skills
-                </span>
-                . I’ve lived, learned and
-                <span> worked in Austria for 7 years</span>. Currently I am
-                looking for the opportunity to enter the IT sector as a
-                <span> Software or Web Developer</span>.
-              </p>
               <br />
               <span>
                 I am always open to learn new technologies incl. backend JAVA,
                 C# etc.
               </span>
+              <br />
+              <br />
+              These pages are completely responsive and designed by myself. All
+              the vector graphics as footer, header and my logo were drawn in
+              Inkscape.
             </p>
           </div>
           <div className="about-shorts">
