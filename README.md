@@ -17,13 +17,13 @@ https://www.figma.com/file/rUhl9Sro4zLNE5cvVPFz5M/MD-web?node-id=0%3A1&t=tRHwXC2
 **Features integrated**
  - [x] React Router
  - [ ] Pages
-	 - [ ] Home
+	 - [x] Home
 		 - [x] About me
 		 - [x] Tech tasks
 		 - [x] Project overview
 		 - [x] Soft skills
 	 - [ ] Experience (work, education)
-	 - [ ] Projects
+	 - [x] Projects
 	 - [x] Contact
  - [x] Components
 	 - [x] Footer

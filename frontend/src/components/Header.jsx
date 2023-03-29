@@ -22,9 +22,9 @@ function Header() {
             : "drop-shadow(0 6px 12px rgba(0, 0, 0, 0.4))",
         }}
       >
-        <div className="section-left">
+        <Link className="section-left" to={"/"}>
           <img src={myLogo} alt="logo" />
-        </div>
+        </Link>
         <div className="section-mid">
           <h1>Mark Demeter</h1>
           <h2>Web Developer</h2>

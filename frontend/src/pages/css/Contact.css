@@ -41,6 +41,16 @@
   color: #666666;
   cursor: default;
 }
+.Contact .loader {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Contact .loader img {
+  padding-top: 60px;
+  height: 140px;
+}
 @media screen and (max-width: 800px) {
   .Contact h1 {
     font-size: 50px;

@@ -9,6 +9,8 @@ import {
   FormControl,
 } from "@mui/material";
 import emailjs from "@emailjs/browser";
+import loaderAnimation from "../imgs/circle_loading.gif";
+import emailSent from "../imgs/email_sent.png";
 
 function Contact() {
   const [name, setName] = useState("");
@@ -58,14 +60,14 @@ function Contact() {
       .then(
         (result) => {
           console.log(result.text);
-          setStatus("Email sent!");
+          setStatus("Sent");
           setEmail("");
           setName("");
           setSubject("");
           setText("");
           setTimeout(() => {
             navigate("/");
-          }, 3000);
+          }, 2000);
         },
         (error) => {
           console.log(error.text);
@@ -76,68 +78,79 @@ function Contact() {
   return (
     <div className="Contact">
       <h1>Contact</h1>
-      <form ref={form} onSubmit={handleSubmit} className="text-fields">
-        <TextField
-          fullWidth
-          required
-          id="name"
-          name="name"
-          label="Name"
-          value={name}
-          onChange={handleChangeName}
-        />
-        <TextField
-          fullWidth
-          required
-          id="email"
-          name="email"
-          label="E-mail"
-          value={email}
-          onChange={handleChangeEmail}
-        />
-        <FormControl required fullWidth>
-          <InputLabel id="subject-input">Subject</InputLabel>
-          <Select
-            labelId="subject-label"
-            id="subject"
-            name="subject"
-            value={subject}
-            label="Subject"
-            onChange={handleChangeSubject}
+      {status === "Send" ? (
+        <form ref={form} onSubmit={handleSubmit} className="text-fields">
+          <TextField
+            fullWidth
+            required
+            id="name"
+            name="name"
+            label="Name"
+            value={name}
+            onChange={handleChangeName}
+          />
+          <TextField
+            fullWidth
+            required
+            id="email"
+            name="email"
+            label="E-mail"
+            value={email}
+            onChange={handleChangeEmail}
+          />
+          <FormControl required fullWidth>
+            <InputLabel id="subject-input">Subject</InputLabel>
+            <Select
+              labelId="subject-label"
+              id="subject"
+              name="subject"
+              value={subject}
+              label="Subject"
+              onChange={handleChangeSubject}
+            >
+              <MenuItem value="Job offer">Job offer</MenuItem>
+              <MenuItem value="Cooperation">Cooperation</MenuItem>
+              <MenuItem value="Assessment">Assessment</MenuItem>
+              <MenuItem value="Other">Other</MenuItem>
+            </Select>
+          </FormControl>
+          <TextField
+            fullWidth
+            id="text"
+            name="text"
+            label="Text"
+            required
+            multiline
+            rows={5}
+            value={text}
+            onChange={handleChangeText}
+          />
+          <button
+            variant="outlined"
+            type="submit"
+            disabled={
+              !(
+                email.includes("@") &&
+                email.includes(".") &&
+                name &&
+                subject &&
+                text
+              )
+            }
           >
-            <MenuItem value="Job offer">Job offer</MenuItem>
-            <MenuItem value="Cooperation">Cooperation</MenuItem>
-            <MenuItem value="Assessment">Assessment</MenuItem>
-            <MenuItem value="Other">Other</MenuItem>
-          </Select>
-        </FormControl>
-        <TextField
-          fullWidth
-          id="text"
-          name="text"
-          label="Text"
-          required
-          multiline
-          rows={5}
-          value={text}
-          onChange={handleChangeText}
-        />
-        <button
-          variant="outlined"
-          type="submit"
-          disabled={
-            !(
-              email.includes("@") &&
-              email.includes(".") &&
-              name &&
-              subject &&
-              text
-            )
-          }
-        >
-          {status}
-        </button>
-      </form>
+            {status}
+          </button>
+        </form>
+      ) : status === "Sending..." ? (
+        <div className="loader">
+          <img src={loaderAnimation} alt="loading" />
+        </div>
+      ) : (
+        <div className="loader">
+          <img src={emailSent} alt="sent" />
+          <h1>email sent!</h1>
+        </div>
+      )}
     </div>
   );
 }
