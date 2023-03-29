@@ -1,5 +1,6 @@
 .Experience {
   width: 100%;
+  min-width: inherit;
   height: auto;
   display: flex;
   flex-direction: column;

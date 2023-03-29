@@ -1,10 +1,11 @@
 .ProjectsOverview {
   width: 100%;
+  min-width: inherit;
   height: fit-content;
   box-sizing: border-box;
   padding-inline: 20px;
   padding-block: 20px;
-  border-radius: 20px;
+  border-radius: inherit;
   background-color: #00963b;
   color: white;
   .title {

@@ -20,6 +20,9 @@ import logoReact from "../imgs/logos/react.png";
 import logoRestApi from "../imgs/logos/rest-api.webp";
 import logoSass from "../imgs/logos/sass.png";
 import logoVs from "../imgs/logos/vs.png";
+import logoAngular from "../imgs/logos/angular.png";
+import logoBootstrap from "../imgs/logos/bootstrap.png";
+import logoTypescript from "../imgs/logos/typescript.png";
 import ProjectsOverview from "../components/ProjectsOverview";
 import softSkills from "../imgs/soft_skills.png";
 
@@ -101,7 +104,9 @@ function Home() {
           <img src={logoCss} alt="css3" />
           <img src={logoSass} alt="sass" />
           <img src={logoJs} alt="javascript" />
+          <img src={logoTypescript} alt="typescript" />
           <img src={logoReact} alt="react" />
+          <img src={logoAngular} alt="angular" />
           <img src={logoRestApi} alt="rest-api" />
           <img src={logoNodejs} alt="nodejs" />
           <img src={logoVs} alt="vs" />
@@ -110,6 +115,7 @@ function Home() {
           <img src={logoDocker} alt="docker" />
           <img src={logoReactRouter} alt="react-router" />
           <img src={logoMui} alt="mui" />
+          <img src={logoBootstrap} alt="bootstrap" />
           <img src={logoFirebase} alt="firebase" />
           <img src={logoFigma} alt="figma" />
           <img src={logoPhotoshop} alt="photoshop" />

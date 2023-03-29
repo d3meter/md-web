@@ -201,6 +201,9 @@
   .ProjectDetail .project-content .project-info {
     width: 100%;
   }
+  .ProjectDetail .project-content .project-preview {
+    padding-top: 10px;
+  }
   .ProjectDetail .project-content .project-info {
     padding-bottom: 0;
   }

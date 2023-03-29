@@ -20,6 +20,7 @@ br {
 
 .Home {
   width: 100%;
+  min-width: inherit;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -147,6 +148,7 @@ br {
   box-sizing: border-box;
   padding-inline: 120px;
   padding-bottom: 120px;
+  border-radius: 20px;
 }
 .Home .section-4 {
   width: 100%;
@@ -216,6 +218,9 @@ br {
   }
 }
 @media screen and (max-width: 1200px) and (max-width: 800px) {
+  .Home h1 {
+    font-size: 50px;
+  }
   .Home .section-1 h1 {
     margin: 0;
   }
@@ -273,9 +278,6 @@ br {
 }
 
 @media screen and (max-width: 420px) {
-  h1 {
-    font-size: 50px;
-  }
   .Home {
     padding-top: 40px;
   }
@@ -303,8 +305,9 @@ br {
     height: 40px;
   }
   .Home .section-3 {
-    padding-inline: 20px;
+    padding-inline: 0;
     padding-bottom: 20px;
+    border-radius: 0;
   }
   .Home .section-4 {
     padding-inline: 20px;
