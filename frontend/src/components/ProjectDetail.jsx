@@ -1,14 +1,25 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef } from "react";
 import "./css/ProjectDetail.css";
 import githubLogo from "../imgs/github.png";
 import eyeLogo from "../imgs/eye.png";
 import arrowSymbol from "../imgs/arrow-down.webp";
 
-function ProjectDetail({ projectDetail }) {
-  const [tabOpen, setTabOpen] = useState(false);
+function ProjectDetail({ projectDetail, onTabOpen, isOpen }) {
+  const projectRef = useRef(null);
+
+  useEffect(() => {
+    if (isOpen) {
+      const scrollPosition =
+      projectRef.current.offsetTop - 90;
+    window.scrollTo({ top: scrollPosition, behavior: "smooth" });
+    }
+  }, [isOpen]);
 
   return (
-    <div className={tabOpen ? "ProjectDetail open" : "ProjectDetail close"}>
+    <div
+      ref={projectRef}
+      className={isOpen ? "ProjectDetail open" : "ProjectDetail close"}
+    >
       <div className="project-content">
         <div className="project-header">
           <div className="project-title">
@@ -45,12 +56,9 @@ function ProjectDetail({ projectDetail }) {
             >
               <img src={githubLogo} alt="github" />
             </a>
-            <button
-              className="icon-container"
-              onClick={() => setTabOpen((oldValue) => !oldValue)}
-            >
+            <button className="icon-container" onClick={onTabOpen}>
               <img
-                className={tabOpen ? "active" : "passiv"}
+                className={isOpen ? "active" : "passiv"}
                 src={arrowSymbol}
                 alt="down"
               />

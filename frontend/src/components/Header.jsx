@@ -2,12 +2,10 @@ import React, { useState } from "react";
 import "./css/Header.css";
 import { Link } from "react-router-dom";
 import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
-/* import Switch from "@mui/material/Switch"; */
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 import myLogo from "./../imgs/MD_logo.svg";
 
 function Header() {
-/*   const label = { inputProps: { "aria-label": "Color switch demo" } }; */
   const [showDropdown, setShowDropdown] = useState(false);
 
   showDropdown ? disableBodyScroll(document) : enableBodyScroll(document);
@@ -30,11 +28,6 @@ function Header() {
           <h2>Web Developer</h2>
         </div>
         <div className="section-right">
-{/*           <div className="switch-lang">
-            <p>EN</p>
-            <Switch {...label} defaultChecked color="default" />
-            <p>GER</p>
-          </div> */}
           <button
             className="menu"
             onClick={() => setShowDropdown((oldValue) => !oldValue)}

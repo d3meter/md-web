@@ -90,6 +90,7 @@
   .Header {
     height: 40px;
     justify-content: flex-end;
+    padding-inline: 0;
   }
   .Header .section-left {
     display: none;

@@ -25,10 +25,20 @@ import logoBootstrap from "../imgs/logos/bootstrap.png";
 import logoTypescript from "../imgs/logos/typescript.png";
 import ProjectsOverview from "../components/ProjectsOverview";
 import softSkills from "../imgs/soft_skills.png";
+import Loader from "../components/Loader";
+import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
 
-function Home() {
+function Home({ isLoading }) {
+  isLoading ? disableBodyScroll(document) : enableBodyScroll(document);
+
   return (
     <div className="Home">
+      <div
+        className="loader-container"
+        style={{ display: isLoading ? "block" : "none" }}
+      >
+        <Loader />
+      </div>
       <div className="section-1">
         <div className="svg-div">
           <img src={headerSvg2} alt="page-header" />

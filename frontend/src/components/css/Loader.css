@@ -1,0 +1,21 @@
+.Loader {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding-top: 150px;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 2;
+  background-color: white;
+}
+.Loader .loader-anim {
+  max-height: 400px;
+  height: auto;
+  max-width: 100%;
+  aspect-ratio: 1;
+}/*# sourceMappingURL=Loader.css.map */

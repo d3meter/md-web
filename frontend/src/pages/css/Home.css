@@ -27,6 +27,7 @@ br {
   align-items: flex-start;
   justify-content: center;
   padding-top: 74px;
+  position: relative;
 }
 .Home .svg-div {
   width: 100%;

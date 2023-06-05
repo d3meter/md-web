@@ -1,5 +1,15 @@
 [
   {
+    "name": "Five in a Row",
+    "text": "The React implementation of the famous and super classic board game. Two players can and must play simultaneously, there is no computer player included. You can register easily or if you don't want to, test accounts are also available to use with email: test1@test.com, password: test1pw, and with email: test2@test.com, password: test2pw. The whole authentication is supported by firebase. Local storage helps the users to stay logged in and store their game settings. The application is responsive so it can be played on mobile phones and tablets as well. Please note that the interface is not fully optimised yet for mobile devices.",
+    "status": "complete",
+    "type": "solo project",
+    "stacks": ["html", "js", "react", "react-router", "sass", "bootstrap", "firebase"],
+    "gitUrl": "https://github.com/d3meter/five-in-a-row",
+    "webUrl": "https://react-five-in-a-row.web.app/",
+    "previewId": "five-in-a-row"
+  },
+  {
     "name": "NASA Calendar",
     "text": "I used NASA-API to build my database. The landing page (main page) shows the last picture or video of the day from NASA. With clicking on the calendar icon of header it navigates the user to the calendar page. As default configuration the current month occures but the user can switch between the required years and months. As the data is fetched directly from the database the loading time is significantly reduced. When clicking on a day its detail page appears. There is more information about the current media and when clicking on it the HD content is opened in a new tab. At the moment Firebase is used for authentication complemented with some validation features such as password and email format check. In the future hosting and fire store will be integrated as well.",
     "status": "in progress",
@@ -45,45 +55,5 @@
     "gitUrl": "https://github.com/d3meter/TEAMPROJ-REACT-pizza-order",
     "webUrl": "https://pizza-order-react.web.app/",
     "previewId": "pizza-order"
-  },
-  {
-    "name": "Funny calendar",
-    "text": "Practicing DOM and class manipulation with JS and styling with SCSS.",
-    "status": "complete",
-    "type": "simple practice",
-    "stacks": ["html", "js", "sass"],
-    "gitUrl": "https://github.com/d3meter/JS-practice-funny-calendar",
-    "webUrl": "https://d3meter.github.io/JS-practice-funny-calendar/frontend/index.html",
-    "previewId": "funny-calendar"
-  },
-  {
-    "name": "UI practice",
-    "text": "First experiences with grid layouts, positioning etc. he design is a duplicate of an existing website design from Behance.",
-    "status": "complete",
-    "type": "simple practice",
-    "stacks": ["html", "css"],
-    "gitUrl": "https://github.com/d3meter/UI-practice-build-a-Behance",
-    "webUrl": "https://d3meter.github.io/UI-practice-build-a-Behance/frontend/index.html",
-    "previewId": "ui-practice"
-  },
-  {
-    "name": "UI resp. design 1",
-    "text": "Practicing responsive styling with CSS and SCSS. They are simple HTML tasks, but the data content is imported by JS.",
-    "status": "complete",
-    "type": "simple practice",
-    "stacks": ["html", "js", "css", "docker"],
-    "gitUrl": "https://github.com/d3meter/UI-resp-practice1",
-    "webUrl": "https://d3meter.github.io/UI-resp-practice1/",
-    "previewId": "ui-resp1"
-  },
-  {
-    "name": "UI resp. design 2",
-    "text": "Practicing responsive styling with CSS and SCSS. They are simple HTML tasks, but the data content is imported by JS.",
-    "status": "complete",
-    "type": "simple practice",
-    "stacks": ["html", "js", "sass", "docker"],
-    "gitUrl": "https://github.com/d3meter/UI-resp-practice2",
-    "webUrl": "https://d3meter.github.io/UI-resp-practice2/",
-    "previewId": "ui-resp2"
   }
 ]
