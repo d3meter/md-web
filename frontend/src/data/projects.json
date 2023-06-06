@@ -20,7 +20,7 @@
   {
     "name": "Angular-TS challenge",
     "text": "It is a minimalist-designed Angular-Typescript application where registered users can read and share articles, follow eachother or mark articles as favorite. The authentication is Token-based (JWT). Please note that the backend server is owned by a third party so contents won't be displayed after starting frontend application. This project only represents my code base currently until I create an own backend.",
-    "status": "finished",
+    "status": "complete",
     "type": "solo project",
     "stacks": [
       "html",
