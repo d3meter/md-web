@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import "./css/ProjectDetail.css";
+import Tooltip from "@mui/material/Tooltip";
 import githubLogo from "../imgs/github.png";
 import eyeLogo from "../imgs/eye.png";
 import arrowSymbol from "../imgs/arrow-down.webp";
@@ -9,9 +10,8 @@ function ProjectDetail({ projectDetail, onTabOpen, isOpen }) {
 
   useEffect(() => {
     if (isOpen) {
-      const scrollPosition =
-      projectRef.current.offsetTop - 90;
-    window.scrollTo({ top: scrollPosition, behavior: "smooth" });
+      const scrollPosition = projectRef.current.offsetTop - 90;
+      window.scrollTo({ top: scrollPosition, behavior: "smooth" });
     }
   }, [isOpen]);
 
@@ -27,42 +27,50 @@ function ProjectDetail({ projectDetail, onTabOpen, isOpen }) {
           </div>
           <div className="project-links">
             {projectDetail.webUrl ? (
+              <Tooltip title="Open app in a new tab" placement="top">
+                <a
+                  className="icon-container"
+                  href={
+                    projectDetail.webUrl
+                      ? projectDetail.webUrl
+                      : projectDetail.gitUrl
+                  }
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img src={eyeLogo} alt="web" />
+                </a>
+              </Tooltip>
+            ) : (
+              <Tooltip title="No preview available" placement="top">
+                <div className="icon-container">
+                  <img
+                    src={eyeLogo}
+                    alt="web"
+                    style={{ opacity: 0.3, cursor: "default" }}
+                  />
+                </div>
+              </Tooltip>
+            )}
+            <Tooltip title="View code base in a new tab" placement="top">
               <a
                 className="icon-container"
-                href={
-                  projectDetail.webUrl
-                    ? projectDetail.webUrl
-                    : projectDetail.gitUrl
-                }
+                href={projectDetail.gitUrl}
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={eyeLogo} alt="web" />
+                <img src={githubLogo} alt="github" />
               </a>
-            ) : (
-              <div className="icon-container">
+            </Tooltip>
+            <Tooltip title={isOpen ? "Close" : "See more"} placement="top">
+              <button className="icon-container" onClick={onTabOpen}>
                 <img
-                  src={eyeLogo}
-                  alt="web"
-                  style={{ opacity: 0.3, cursor: "default" }}
+                  className={isOpen ? "active" : "passiv"}
+                  src={arrowSymbol}
+                  alt="down"
                 />
-              </div>
-            )}
-            <a
-              className="icon-container"
-              href={projectDetail.gitUrl}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={githubLogo} alt="github" />
-            </a>
-            <button className="icon-container" onClick={onTabOpen}>
-              <img
-                className={isOpen ? "active" : "passiv"}
-                src={arrowSymbol}
-                alt="down"
-              />
-            </button>
+              </button>
+            </Tooltip>
           </div>
         </div>
         <div className="project-preview">

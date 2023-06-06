@@ -4,17 +4,54 @@
     "text": "The React implementation of the famous and super classic board game. Two players can and must play simultaneously, there is no computer player included. You can register easily or if you don't want to, test accounts are also available to use with email: test1@test.com, password: test1pw, and with email: test2@test.com, password: test2pw. The whole authentication is supported by firebase. Local storage helps the users to stay logged in and store their game settings. The application is responsive so it can be played on mobile phones and tablets as well. Please note that the interface is not fully optimised yet for mobile devices.",
     "status": "complete",
     "type": "solo project",
-    "stacks": ["html", "js", "react", "react-router", "sass", "bootstrap", "firebase"],
+    "stacks": [
+      "html",
+      "js",
+      "react",
+      "react-router",
+      "sass",
+      "bootstrap",
+      "firebase"
+    ],
     "gitUrl": "https://github.com/d3meter/five-in-a-row",
     "webUrl": "https://react-five-in-a-row.web.app/",
     "previewId": "five-in-a-row"
+  },
+  {
+    "name": "Angular-TS challenge",
+    "text": "It is a minimalist-designed Angular-Typescript application where registered users can read and share articles, follow eachother or mark articles as favorite. The authentication is Token-based (JWT). Please note that the backend server is owned by a third party so contents won't be displayed after starting frontend application. This project only represents my code base currently until I create an own backend.",
+    "status": "finished",
+    "type": "solo project",
+    "stacks": [
+      "html",
+      "js",
+      "angular",
+      "typescript",
+      "sass",
+      "bootstrap",
+      "rest",
+      "jasmine",
+      "token-auth",
+      "jwt",
+      "local-storage"
+    ],
+    "gitUrl": "https://github.com/d3meter/ui-challenge-frontend",
+    "previewId": "angular-challenge"
   },
   {
     "name": "NASA Calendar",
     "text": "I used NASA-API to build my database. The landing page (main page) shows the last picture or video of the day from NASA. With clicking on the calendar icon of header it navigates the user to the calendar page. As default configuration the current month occures but the user can switch between the required years and months. As the data is fetched directly from the database the loading time is significantly reduced. When clicking on a day its detail page appears. There is more information about the current media and when clicking on it the HD content is opened in a new tab. At the moment Firebase is used for authentication complemented with some validation features such as password and email format check. In the future hosting and fire store will be integrated as well.",
     "status": "in progress",
     "type": "solo project",
-    "stacks": ["html", "js", "react", "react-router", "sass", "mui", "firebase"],
+    "stacks": [
+      "html",
+      "js",
+      "react",
+      "react-router",
+      "sass",
+      "mui",
+      "firebase"
+    ],
     "gitUrl": "https://github.com/d3meter/nasa-calendar",
     "webUrl": "https://nasa-calendar.web.app/",
     "previewId": "nasa-calendar"
@@ -24,13 +61,13 @@
     "text": "Three-persons-project. Pizza ordering website with admin and order listing site incl. own backend. The orders are stored in separated JSON files (backend/data/orders) identified with auto-generated ids. I planned the UI/UX design in Figma and in addition, my main tasks were the inputs fields, the order.js and a lot of other functions on every other pages. On /admin you can add new and delete or modify existing pizzas. Active: false means the pizza is inactive so it will disappear on the public index.html. /order site made for kitchen with minimal design. It gives an overview of the current orders. You can change the status of orders and filter what is still open.",
     "status": "complete",
     "type": "bootcamp team project",
-    "stacks": ["html", "js", "sass", "figma", "express"],
+    "stacks": ["html", "js", "sass", "figma", "express", "rest"],
     "gitUrl": "https://github.com/d3meter/TEAMPROJ-JS-pizza-order-admin",
     "previewId": "pizza-admin"
   },
   {
     "name": "Artwork",
-    "text": "Our final duo-project. The complete UI/UX design was my part, but we mainly coded together via Google Meet. The user can browse between the fetched artworks of Harvard Museum API with using different filter functions like searching for name or filtering artwork type, etc. Each artwork has its own page of details. The favorite artworks can be saved and stored in local store.",
+    "text": "Our final duo-project. The complete UI/UX design was my part, but we mainly coded together via Google Meet. The user can browse between the fetched artworks of Harvard Museum API with using different filter functions like searching for name or filtering artwork type, etc. Each artwork has its own page of details. The favorite artworks can be saved and stored in local storage.",
     "status": "complete",
     "type": "bootcamp team project",
     "stacks": [
@@ -40,7 +77,7 @@
       "mui",
       "masonry",
       "react-router",
-      "local-store"
+      "local-storage"
     ],
     "gitUrl": "https://github.com/d3meter/TEAMPROJ-REACT-artwork",
     "webUrl": "https://react-artwork.web.app/",
