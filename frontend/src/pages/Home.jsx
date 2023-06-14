@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./css/Home.css";
 import headerSvg2 from "../imgs/md_header2.svg";
 import headerSvg1 from "../imgs/md_header1.svg";
@@ -30,6 +30,32 @@ import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
 
 function Home({ isLoading }) {
   isLoading ? disableBodyScroll(document) : enableBodyScroll(document);
+  const [isSection2Visible, setIsSection2Visible] = useState(false);
+  const [isSection3Visible, setIsSection3Visible] = useState(false);
+  const [isSection4Visible, setIsSection4Visible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = (sectionIndex, offset) => {
+      const section = document.querySelector(`.section-${sectionIndex}`);
+      const sectionTop = section.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+
+      if (sectionTop - windowHeight + offset <= 0) {
+        if (sectionIndex === 2) {
+          setIsSection2Visible(true);
+        } else if (sectionIndex === 3) {
+          setIsSection3Visible(true);
+        } else if (sectionIndex === 4) {
+          setIsSection4Visible(true);
+        }
+      }
+    };
+
+    window.addEventListener("scroll", () => handleScroll(2, 200));
+    window.addEventListener("scroll", () => handleScroll(3, 200));
+    window.addEventListener("scroll", () => handleScroll(4, 200));
+
+  }, [isLoading]);
 
   return (
     <div className="Home">
@@ -105,7 +131,11 @@ function Home({ isLoading }) {
       <div className="svg-div">
         <img src={headerSvg1} alt="page-header" />
       </div>
-      <div className="section-2">
+      <div
+        className={`section-2 section ${
+          isSection2Visible ? "section-animation" : ""
+        }`}
+      >
         <h1>
           Tech <span>Stacks</span>
         </h1>
@@ -132,10 +162,14 @@ function Home({ isLoading }) {
           <img src={logoInkscape} alt="inkscape" />
         </div>
       </div>
-      <div className="section-3">
+      <div
+        className={`section-3 section ${
+          isSection3Visible ? "section-animation" : ""
+        }`}
+      >
         <ProjectsOverview />
       </div>
-      <div className="section-4">
+      <div className={`section-4 section ${isSection4Visible ? "section-animation" : ""}`}>
         <div className="logo-container">
           <img src={softSkills} alt="soft skills" />
         </div>

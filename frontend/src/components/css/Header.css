@@ -121,7 +121,6 @@
   right: 0;
   display: flex;
   justify-content: center;
-  overflow: scroll;
 }
 .dropdown-menu .menu-list {
   width: 100%;
@@ -170,5 +169,10 @@
   }
   .dropdown-menu .menu-list .menu-item {
     margin-block: 10px;
+  }
+}
+@media screen and (max-height: 540px) {
+  .dropdown-menu {
+    overflow-y: scroll;
   }
 }/*# sourceMappingURL=Header.css.map */

@@ -176,12 +176,23 @@ br {
   filter: opacity(0.8);
 }
 .Home .section-4 .logo-container img {
-  width: 80%;
-  transition: 2s;
-}
-.Home .section-4 .logo-container img:hover {
   width: 100%;
-  transition: 0.6s ease-in-out;
+}
+.Home .section {
+  opacity: 0;
+}
+.Home .section.section-animation {
+  animation: reveal 0.5s ease-in-out forwards;
+}
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 @media screen and (min-width: 1440px) {
   .Home .section-1 h1 {

@@ -33,6 +33,7 @@ https://www.figma.com/file/rUhl9Sro4zLNE5cvVPFz5M/MD-web?node-id=0%3A1&t=tRHwXC2
  - [x] Self-made graphic design (SVG)
 	 - [x] header, footer
 	 - [x] logo
- - [ ] Spinner while loading data
-	- [ ] Page animations
-	- [ ] Change web icons
+ - [x] Spinner while loading data
+	- [x] Page animations
+	- [ ] Header animations
+	- [x] Change web icons

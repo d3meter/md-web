@@ -123,7 +123,6 @@
   right: 0;
   display: flex;
   justify-content: center;
-  overflow: scroll;
   .menu-list {
     width: 100%;
     height: fit-content;
@@ -164,9 +163,12 @@
     font-size: 20px;
     .menu-list {
       padding-top: 0;
-      .menu-item{
+      .menu-item {
         margin-block: 10px;
       }
     }
+  }
+  @media screen and (max-height: 540px) {
+    overflow-y: scroll;
   }
 }
