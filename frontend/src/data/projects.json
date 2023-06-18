@@ -1,14 +1,15 @@
 [
   {
     "name": "Five in a Row",
-    "text": "The React implementation of the famous and super classic board game. Two players can and must play simultaneously, there is no computer player included. You can register easily or if you don't want to, test accounts are also available to use with email: test1@test.com, password: test1pw, and with email: test2@test.com, password: test2pw. The whole authentication is supported by firebase. Local storage helps the users to stay logged in and store their game settings. The application is responsive so it can be played on mobile phones and tablets as well. Please note that the interface is not fully optimised yet for mobile devices.",
+    "text": "The React + TypeScript implementation of the famous and super classic board game. Two players can and must play simultaneously, there is no computer player included. You can register easily or if you don't want to, test accounts are also available to use with email: test1@test.com, password: test1pw, and with email: test2@test.com, password: test2pw. The whole authentication is supported by firebase. Local storage helps the users to stay logged in and store their game settings. The application is responsive so it can be played on mobile phones and tablets as well. Please note that the interface is not fully optimised yet for mobile devices.",
     "status": "complete",
     "type": "solo project",
     "stacks": [
       "html",
       "js",
+      "typescript",
       "react",
-      "react-router",
+      "oop",
       "sass",
       "bootstrap",
       "firebase"
@@ -47,7 +48,6 @@
       "html",
       "js",
       "react",
-      "react-router",
       "sass",
       "mui",
       "firebase"
@@ -76,7 +76,6 @@
       "css",
       "mui",
       "masonry",
-      "react-router",
       "local-storage"
     ],
     "gitUrl": "https://github.com/d3meter/TEAMPROJ-REACT-artwork",
