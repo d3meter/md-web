@@ -18,9 +18,8 @@ function Footer() {
         <div className="contact-content">
           <div className="contact-text">
             <p>
-              If you liked my introduction and my works waked up your attention, please feel
-              free to contact me. You can also visit me on LinkedIn or follow
-              my work progress on GitHub Pages.
+              If you liked my introduction and it woke up your attention, please feel
+              free to contact me. You can also visit me on LinkedIn or follow on GitHub Pages.
               <h2>I would be happy to hear from you!</h2>
             </p>
           </div>
