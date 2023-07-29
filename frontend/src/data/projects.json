@@ -57,37 +57,11 @@
     "previewId": "nasa-calendar"
   },
   {
-    "name": "Pizza admin (JS)",
-    "text": "Three-persons-project. Pizza ordering website with admin and order listing site incl. own backend. The orders are stored in separated JSON files (backend/data/orders) identified with auto-generated ids. I planned the UI/UX design in Figma and in addition, my main tasks were the inputs fields, the order.js and a lot of other functions on every other pages. On /admin you can add new and delete or modify existing pizzas. Active: false means the pizza is inactive so it will disappear on the public index.html. /order site made for kitchen with minimal design. It gives an overview of the current orders. You can change the status of orders and filter what is still open.",
-    "status": "complete",
-    "type": "bootcamp team project",
-    "stacks": ["html", "js", "sass", "figma", "express", "rest"],
-    "gitUrl": "https://github.com/d3meter/TEAMPROJ-JS-pizza-order-admin",
-    "previewId": "pizza-admin"
-  },
-  {
-    "name": "Artwork",
-    "text": "Our final duo-project. The complete UI/UX design was my part, but we mainly coded together via Google Meet. The user can browse between the fetched artworks of Harvard Museum API with using different filter functions like searching for name or filtering artwork type, etc. Each artwork has its own page of details. The favorite artworks can be saved and stored in local storage.",
-    "status": "complete",
-    "type": "bootcamp team project",
-    "stacks": [
-      "html",
-      "react",
-      "css",
-      "mui",
-      "masonry",
-      "local-storage"
-    ],
-    "gitUrl": "https://github.com/d3meter/TEAMPROJ-REACT-artwork",
-    "webUrl": "https://react-artwork.web.app/",
-    "previewId": "artwork"
-  },
-  {
     "name": "Pizza order",
-    "text": "The same website as Pizza admin (JS) but implemented into REACT this time, without admin or order pages. This was also a three-persons-project.",
+    "text": "A small team project in REACT from the bootcamp. It is a simple SPA pizza ordering site where orders are stored in separated JSON files (backend/data/orders) identified with auto-generated ids. I planned the UI/UX design in Figma, my main responsibilites were the inputs fields and their validation.",
     "status": "complete",
     "type": "bootcamp team project",
-    "stacks": ["html", "react", "css", "express"],
+    "stacks": ["html", "react", "css", "express, nodejs, mockup"],
     "gitUrl": "https://github.com/d3meter/TEAMPROJ-REACT-pizza-order",
     "webUrl": "https://pizza-order-react.web.app/",
     "previewId": "pizza-order"
